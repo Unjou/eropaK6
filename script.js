@@ -724,7 +724,7 @@ const countries = {
         description: " Negara ini terkenal dengan sektor keuangan yang berkembang pesat, terutama dalam hal perbankan dan industri asuransi, yang telah menjadikannya pusat finansial global. Selain sektor keuangan, Liechtenstein juga memiliki sektor industri yang kuat, termasuk manufaktur produk tinggi seperti peralatan mekanik, jam tangan, dan barang-barang teknologi canggih.",
         products: [
             {icon:"📺", description:"Elaktronik"},
-            {icon:"💰", description:"HJasa Keuangan"}
+            {icon:"💰", description:"HJasa Keuangan"},
             {icon:"🐄", description:"Hewani"}
         ],
         isEU: false
