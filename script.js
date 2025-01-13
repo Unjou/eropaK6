@@ -1011,7 +1011,7 @@ const countries = {
         description: "Ekonomi Slovenia didukung oleh sektor industri dan ekspor yang kuat, seperti otomotif, elektronik, farmasi. Letaknya yang strategis di Eropa Tengah menjadikannya pusat logistik penting untuk perdagangan regional dan internasional.",
         products: [
             {icon:"🚗", description:"Otomotif"},
-            {icon"🏝️", description:"Pariwisata"},
+            {icon:"🏝️", description:"Pariwisata"},
             {icon:"💻", description:"Teknologi"}
         ],
         isEU: true
