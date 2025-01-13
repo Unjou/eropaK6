@@ -515,8 +515,13 @@ const countries = {
         currency: "Koruna Ceko (CZK)",
         language: "Ceko",
         flag: "https://flagcdn.com/cz.svg",
-        description: "Negara di Eropa Tengah dengan arsitektur yang menakjubkan dan tradisi bir yang kaya.",
-        products: ["🍺", "🚗", "🎻", "👗"],
+        description: "Republik Ceko memiliki ekonomi yang stabil, didukung oleh sektor industri yang kuat, terutama di bidang manufaktur, teknologi, dan otomotif. Selain itu, negara ini memiliki angka pengangguran yang rendah dan kualitas hidup yang tinggi bagi warganya. Dengan menjadi anggota Uni Eropa sejak tahun 2004, Republik Ceko juga telah memperkuat hubungan perdagangan internasionalnya, yang semakin mendukung pertumbuhan ekonominya.",
+        products: [
+            {icon:"🚗", description:"Otomotif"}, 
+            {icon:"📺", description:"Elektronik"}, 
+            {icon:"💻", description:"Teknologi"},
+            {icon:"🏝️", description:"Parwisata"}
+        ],
         isEU: true
     },
     DK: {
@@ -595,7 +600,7 @@ const countries = {
         currency: "Euro (EUR)",
         language: "Jerman",
         flag: "https://flagcdn.com/de.svg",
-        description: "Sebagai negara dengan ekonomi terbesar di Eropa, Jerman memiliki industri yang sangat maju, dengan sektor-sektor utama seperti otomotif, mesin, elektronik, kimia, dan teknologi informasi. Perusahaan-perusahaan besar seperti Volkswagen, BMW, Siemens, dan BASF menjadi pemain global dalam industri mereka masing-masing, yang menunjukkan betapa terdepan dan kompetitifnya sektor manufaktur di negara ini.",
+        description: "Sebagai negara dengan ekonomi terbesar di Eropa, Jerman memiliki industri yang sangat maju, dengan sektor-sektor utama seperti otomotif, mesin, elektronik, kimia, dan teknologi informasi. Perusahaan-perusahaan besar seperti Volkswagen, BMW, Siemens, menjadi pemain global dalam industri mereka masing-masing, yang menunjukkan betapa terdepan dan kompetitifnya sektor manufaktur di negara ini.",
         products: [
             {icon:"🚗", description:"Otomotif"},
             {icon:"💻", description:"Teknologi"},
@@ -682,7 +687,12 @@ const countries = {
         language: "Italia",
         flag: "https://flagcdn.com/it.svg",
         description: "Italia memiliki kekuatan utama dalam bidang manufaktur, terutama dalam industri otomotif. Negara ini adalah rumah bagi merek-merek terkenal seperti Ferrari, Fiat, Lamborghini, dan Ducati, serta merupakan pusat utama bagi industri fashion dengan kota-kota seperti Milan yang terkenal di seluruh dunia. Selain itu, Italia juga memiliki sektor makanan dan minuman yang sangat terkenal, dengan produk-produk seperti pasta, anggur, dan keju yang diekspor ke seluruh dunia. Pariwisata adalah salah satu pilar ekonomi utama Italia, berkat kekayaan sejarah, seni, dan arsitektur yang dimilikinya.",
-        products: ["🍕", "🏝️", "👗", "🏎️"],
+        products: [
+            {icon:"🚗", description:"Otomotif"},
+            {icon:"🏝️", description:"Pariwisata"},
+            {icon:"👗", description:"Fashion"},
+            {icon:"🍕", description:"Makanan"}
+        ],
         isEU: true
     },
     LV: {
@@ -695,7 +705,11 @@ const countries = {
         language: "Latvia",
         flag: "https://flagcdn.com/lv.svg",
         description: "Meskipun sektor teknologi dan sektor jasa, seperti perbankan dan IT, berkembang pesat, Latvia masih bergantung pada sektor tradisional seperti manufaktur dan transportasi yang rentan terhadap fluktuasi pasar global. Sebagian besar industri Latvia juga lebih fokus pada ekspor barang mentah atau produk yang memiliki nilai tambah lebih rendah dibandingkan dengan negara-negara maju yang lebih berorientasi pada inovasi dan produk bernilai tinggi.",
-        products: ["🌲", "🧀", "💻", "🏰"],
+        products: [
+            {icon:"🏝️", description:"Pariwisata"},
+            {icon:"⚙️", description:"Manufaktur"},
+            {icon:"💻", description:"Teknologi"}
+        ],
         isEU: true
     },
     LI: {
@@ -708,7 +722,11 @@ const countries = {
         language: "Jerman",
         flag: "https://flagcdn.com/li.svg",
         description: " Negara ini terkenal dengan sektor keuangan yang berkembang pesat, terutama dalam hal perbankan dan industri asuransi, yang telah menjadikannya pusat finansial global. Selain sektor keuangan, Liechtenstein juga memiliki sektor industri yang kuat, termasuk manufaktur produk tinggi seperti peralatan mekanik, jam tangan, dan barang-barang teknologi canggih.",
-        products: ["💰", "🏔️", "🧀", "🎿"],
+        products: [
+            {icon:"📺", description:"Elaktronik"},
+            {icon:"💰", description:"HJasa Keuangan"}
+            {icon:"🐄", description:"Hewani"}
+        ],
         isEU: false
     },
     LT: {
@@ -721,7 +739,10 @@ const countries = {
         language: "Lithuania",
         flag: "https://flagcdn.com/lt.svg",
         description: "Lithuania menghadapi beberapa tantangan yang menghalangi statusnya sebagai negara maju. Salah satunya adalah masalah ketergantungan pada sektor ekspor, terutama dalam industri elektronik, tekstil, dan produk pertanian, yang membuatnya rentan terhadap fluktuasi pasar global. Selain itu, meskipun ibu kota Vilnius dan beberapa kota besar lainnya berkembang pesat, wilayah pedesaan di Lithuania masih menghadapi tingkat pengangguran yang relatif tinggi dan masalah akses terhadap layanan publik seperti kesehatan dan pendidikan.",
-        products: ["🧀", "🌲", "💻", "🏰"],
+        products: [
+            {icon:"⚙️", description:"Manufaktur"},
+            {icon:"🚜", description:"Pertanian"}
+        ],
         isEU: true
     },
     LU: {
@@ -734,7 +755,12 @@ const countries = {
         language: "Luksemburg, Prancis, Jerman",
         flag: "https://flagcdn.com/lu.svg",
         description: " Negara ini dikenal sebagai pusat keuangan internasional, dengan sektor perbankan, asuransi, dan investasi yang sangat kuat. Luksemburg memiliki kebijakan perpajakan yang menguntungkan dan menawarkan lingkungan bisnis yang ramah, menarik banyak perusahaan besar dan institusi keuangan global untuk beroperasi di sana. Selain itu, sektor teknologi informasi dan komunikasi (TIK) juga berkembang pesat, menjadikannya sebagai hub untuk perusahaan-perusahaan teknologi dan inovasi digital.",
-        products: ["💰", "💻", "🧀", "🏰"],
+        products: [
+            {icon:"💰", description:"Jasa Keuangan"},
+            {icon:"💻", description:"Teknologi"}, 
+            {Icon:"🏭", description:"Industri"},
+            {icon:"🏰", description:"Pariwisata"}
+        ],
         isEU: true
     },
     MT: {
@@ -747,7 +773,11 @@ const countries = {
         language: "Malta, Inggris",
         flag: "https://flagcdn.com/mt.svg",
         description: "Ekonomi Malta sangat bergantung pada sektor jasa, terutama sektor keuangan, pariwisata, dan teknologi informasi. Malta telah berhasil menarik banyak perusahaan internasional dengan kebijakan pajak yang menguntungkan, serta kemudahan berbisnis yang memungkinkan negara ini menjadi hub bisnis internasional, khususnya dalam sektor perbankan dan asuransi. Sektor pariwisata juga menjadi pendorong utama ekonomi Malta, dengan keindahan alam, warisan sejarah, dan iklim mediterania yang menarik jutaan wisatawan setiap tahun. Di samping itu, Malta memiliki sektor manufaktur yang berkembang, dengan fokus pada industri farmasi, elektronik, dan produk kimia yang bernilai tambah tinggi.",
-        products: ["🏖️", "💰", "💻"],
+        products: [
+            {icon:"🏖️", description:"Pariwisata"},
+            {icon:"💰", description:"Jasa Keungan"},
+            {icon:"💻", description:"Teknologi"}
+        ],
         isEU: true
     },
     MD: {
@@ -760,7 +790,10 @@ const countries = {
         language: "Romania",
         flag: "https://flagcdn.com/md.svg",
         description: "Ekonomi Moldova adalah salah satu yang terkecil di Eropa, dengan ketergantungan besar pada sektor pertanian, terutama anggur, buah-buahan, dan sayuran sebagai komoditas ekspornya. Namun, ekonomi yang bergantung pada pertanian ini membuat Moldova sangat rentan terhadap perubahan iklim dan fluktuasi harga di pasar global.",
-        products: ["🚜", "🍷", "🌻"],
+        products: [
+            {icon:"🚜", description:"Pertanian"},
+            {icon:"🏭", description:"Industri"}
+        ],
         isEU: false
     },
     MC: {
@@ -773,7 +806,10 @@ const countries = {
         language: "Prancis",
         flag: "https://flagcdn.com/mc.svg",
         description: "Monako dikenal sebagai destinasi eksklusif dengan fasilitas mewah seperti kasino Monte Carlo dan Grand Prix Formula 1, yang menarik wisatawan berpenghasilan tinggi dari seluruh dunia. Pendapatan per kapita Monako termasuk salah satu yang tertinggi di dunia. Meskipun tidak memiliki sumber daya alam yang signifikan, Monako memanfaatkan posisinya di kawasan Riviera Prancis untuk mendukung ekonominya. Selain itu, pemerintah Monako telah berfokus pada keberlanjutan, termasuk proyek reklamasi laut dan pembangunan ramah lingkungan untuk menjaga daya tariknya sebagai negara kecil namun maju.",
-        products: ["🎰", "🏎️", "🏝️", "💰"],
+        products: [
+            {icon:"🏝️", description:"Pariwisata"},
+            {icon:"💰", description:"Jasa Keuangan"}
+        ],
         isEU: false
     },
     ME: {
@@ -786,7 +822,10 @@ const countries = {
         language: "Montenegro",
         flag: "https://flagcdn.com/me.svg",
         description: "Salah satu alasan utamanya adalah skala ekonominya yang kecil dan tingkat pendapatan per kapita yang masih lebih rendah dibandingkan dengan negara-negara maju di Eropa. Ekonomi Montenegro sangat bergantung pada sektor pariwisata, terutama karena keindahan alamnya, seperti pantai di sepanjang Laut Adriatik dan kawasan pegunungan yang menarik wisatawan. Namun, ketergantungan yang besar pada sektor ini membuat ekonomi Montenegro rentan terhadap guncangan eksternal, seperti yang terlihat selama pandemi COVID-19.",
-        products: ["⛰️", "🏖️", "🚜", "🧀"],
+        products: [
+            {icon:"🏖️", description:"Pariwisata"},
+            {icon:"🏭", description:"Industri"}
+        ],
         isEU: false
     },
     NL: {
@@ -799,7 +838,12 @@ const countries = {
         language: "Belanda",
         flag: "https://flagcdn.com/nl.svg",
         description: "Sebagai pusat perdagangan internasional yang strategis, Belanda memiliki pelabuhan Rotterdam, salah satu pelabuhan tersibuk di dunia, dan bandara Schiphol yang menjadi hub utama di Eropa. Ekonomi Belanda didukung oleh sektor-sektor maju seperti agribisnis, teknologi, keuangan, energi, dan logistik, menjadikannya pemain kunci dalam perdagangan global.",
-        products: ["🌷", "🐄", "⚙️", "🚜"],
+        products: [
+            {icon:"💻", description:"Teknologi"},
+            {icon:"🏝️", description:"Pariwisata"},
+            {icon:"💰", description:"Jasa Keuangan"},
+            {icon:"🚜", description:"Pertanian"}
+        ],
         isEU: true
     },
     MK: {
@@ -812,7 +856,11 @@ const countries = {
         language: "Makedonia",
         flag: "https://flagcdn.com/mk.svg",
         description: " Meskipun memiliki sektor pertanian, industri ringan, dan manufaktur sebagai pilar ekonominya, negara ini menghadapi tantangan besar dalam hal daya saing di pasar global. ",
-        products: ["🚜", "🐄", "🏝️", "⚙️"],
+        products: [
+            {icon:"🚜", description:"Pertanian"},
+            {icon:"🏭", description:"Industri"},
+            {icon:"🏝️", description:"Pariwisata"}
+        ],
         isEU: false
     },
     NO: {
@@ -824,8 +872,12 @@ const countries = {
         currency: "Krone Norwegia (NOK)",
         language: "Norwegia",
         flag: "https://flagcdn.com/no.svg",
-        description: "Norwegia terkenal akan sumber daya alamnya. Mereka punya cadangan minyak dan gas alam yang besar, dan ekspor komoditas ini jadi penopang utama ekonomi mereka. Selain itu, Norwegia juga dikenal akan keindahan alamnya, jadi sektor pariwisata juga penting.",
-        products: ["🐟", "🛢️", "⛷️", "🚢"],
+        description: "Norwegia terkenal akan sumber daya alamnya. Mereka punya cadangan minyak dan gas alam yang besar, dan ekspor komoditas ini jadi penopang utama ekonomi mereka. Selain itu, Norwegia juga dikenal akan keindahan alamnya, jadi sektor pariwisata juga penting. Norwegia dikenal akan kualitas dan keberlanjutan indutri perikanan, negara ini merupakan produsen ikan Salmon terbesar di dunia, menyumbang sekitar 60% dari total produksi global.",
+        products: [
+            {icon:"🐟", description:"Perikanan"},
+            {icon:"🛢️", description:"Minyak & Gas"},
+            {icon:"⛷️", description:"Pariwisata"}
+         ],
         isEU: false
     },
     PL: {
@@ -838,7 +890,12 @@ const countries = {
         language: "Polandia",
         flag: "https://flagcdn.com/pl.svg",
         description: "Polandia termasuk dalam kategori negara maju, terutama setelah bergabung dengan Uni Eropa pada tahun 2004, yang menjadi katalis utama bagi pertumbuhan ekonomi dan modernisasi negara ini. Salah satu alasan utama status ini adalah pertumbuhan ekonomi yang konsisten selama beberapa dekade terakhir, didorong oleh sektor manufaktur, ekspor, dan integrasi dengan pasar global. Polandia juga memiliki infrastruktur yang berkembang pesat, termasuk jaringan transportasi dan fasilitas publik, berkat pendanaan Uni Eropa yang digunakan secara efektif untuk proyek pembangunan.",
-        products: ["🍎", "🚗", "🌾", "💻"],
+        products: [
+            {icon:"📺", description:"Elektronik"},
+            {icon:"🚗", description:"Otomotif"},
+            {icon:"🚜", description:"Pertanian"},
+            {icon:"💻", description:"Teknologi"}
+        ],
         isEU: true
     },
     PT: {
@@ -851,7 +908,11 @@ const countries = {
         language: "Portugis",
         flag: "https://flagcdn.com/pt.svg",
         description: "Portugal termasuk dalam kategori negara maju, tetapi posisinya dalam jajaran negara maju sering dianggap berada di tingkat yang lebih rendah dibandingkan negara-negara Uni Eropa lainnya. Salah satu alasan utama adalah stabilitas ekonomi yang telah dicapai melalui reformasi struktural dan dukungan dari Uni Eropa, meskipun negara ini masih menghadapi tantangan signifikan. Ekonomi Portugal sangat bergantung pada sektor pariwisata, yang memberikan kontribusi besar terhadap PDB tetapi membuat negara ini rentan terhadap guncangan global seperti pandemi. ",
-        products: ["🍷", "👕", "🚗", "⛵"],
+        products: [
+            {icon:"🚜", description:"Pertanian"},
+            {icon:"⚙️", description:"Manufaktur"}
+            {icon:"🏝️", description:"Pariwisata"}
+        ],
         isEU: true
     },
     RO: {
@@ -864,7 +925,11 @@ const countries = {
         language: "Romania",
         flag: "https://flagcdn.com/ro.svg",
         description: "Rumania menghadapi tantangan seperti ketimpangan ekonomi antara wilayah perkotaan dan pedesaan, di mana daerah pedesaan sering kali kurang berkembang dalam hal infrastruktur, pendidikan, dan layanan kesehatan. Meskipun sektor teknologi informasi dan pariwisata berkembang pesat, ketergantungan pada sektor tradisional seperti pertanian dan manufaktur masih cukup besar.",
-        products: ["🚗", "🌾", "🏝️", "🏰"],
+        products: [
+            {icon:"⚙️", description:"Manufaktur"},
+            {icon:"🚜", description:"Pertanian"},
+            {icon:"🏝️", description:"Pariwisata"}
+        ],
         isEU: true
     },
     RU: {
@@ -877,7 +942,11 @@ const countries = {
         language: "Rusia",
         flag: "https://flagcdn.com/ru.svg",
         description: "Rusia termasuk dalam kategori negara berkembang, meskipun memiliki pengaruh global yang besar dan merupakan salah satu ekonomi terbesar di dunia. Status ini disebabkan oleh berbagai faktor, termasuk ketergantungan ekonominya yang signifikan pada ekspor sumber daya alam, terutama minyak dan gas. Konflik dengan Ukraina jadi salah satu faktor yang membuat Rusia semakin sulit berkembang. Sanksi-sanksi ekonomi yang diberlakukan ke Rusia membuat perekonomian mereka makin terpuruk. Selain itu, konflik ini juga mengalihkan banyak sumber daya yang seharusnya digunakan untuk pembangunan dalam negeri.",
-        products: ["🛢️", "🌾", "✈️", "💎"],
+        products: [
+            {icon:"🛢️", description:"Minyak & Gas"},
+            {icon:"🌾", description:"Pertanian"},
+            {icon:"⚙️", description:"Manufaktur"}
+        ],
         isEU: false
     },
     SM: {
@@ -890,7 +959,10 @@ const countries = {
         language: "Italia",
         flag: "https://flagcdn.com/sm.svg",
         description: "San Marino termasuk negara maju. Meskipun ukurannya kecil, mereka punya pendapatan per kapita yang tinggi. Ini karena sektor pariwisata yang maju dan kebijakan perpajakan yang menarik banyak perusahaan asing untuk beroperasi dinegara ini.",
-        products: ["🏰", "🚜", "💰"],
+        products: [
+            {icon:"🏰", description:"Pariwisata"},
+            {icon:"💰", description:"Jasa Keuangan"}
+        ],
         isEU: false
     },
     RS: {
@@ -903,7 +975,11 @@ const countries = {
         language: "Serbia",
         flag: "https://flagcdn.com/rs.svg",
         description: "Serbia mengalami dampak besar dari konflik Yugoslavia dan sanksi internasional pada 1990-an, yang menyebabkan kehancuran ekonomi dan infrastruktur. Meskipun telah terjadi banyak pembangunan kembali, dampak tersebut masih terasa dalam bentuk ketertinggalan infrastruktur di beberapa wilayah. Namun, Serbia menunjukkan perkembangan positif. Sektor teknologi informasi (IT) sedang berkembang pesat, dan negara ini mulai menarik investasi asing di bidang manufaktur dan teknologi. Posisi geografisnya yang strategis di Eropa Selatan memberikan potensi besar untuk perdagangan dan integrasi ekonomi lebih lanjut.",
-        products: ["🌾", "🚗", "🍎", "🏝️"],
+        products: [
+            {icon:"🌾", description:"Pertanian"},
+            {icon:"🏭", description:"Industri"},
+            {icon:"🏝️", description:"Pariwisata"}
+        ],
         isEU: false
     },
     SK: {
@@ -916,7 +992,11 @@ const countries = {
         language: "Slovakia",
         flag: "https://flagcdn.com/sk.svg",
         description: "Ekonomi Slovakia sangat bergantung pada sektor industri, khususnya otomotif. Negara ini dikenal sebagai salah satu produsen mobil terbesar per kapita di dunia, dengan kehadiran perusahaan seperti Volkswagen, Kia, dan Peugeot. Selain itu, Slovakia juga memiliki sektor elektronik, teknologi informasi, dan pariwisata yang berkembang. ",
-        products: ["🚗", "💻", "🚜"],
+        products: [
+            {icon:"🚗", description:"Otomotif"},
+            {icon:"💻", description:"Teknologi"},
+            {icon:"🚜", description:"Pertanian"}
+        ],
         isEU: true
     },
     SI: {
@@ -929,7 +1009,11 @@ const countries = {
         language: "Slovenia",
         flag: "https://flagcdn.com/si.svg",
         description: "Ekonomi Slovenia didukung oleh sektor industri dan ekspor yang kuat, seperti otomotif, elektronik, farmasi. Letaknya yang strategis di Eropa Tengah menjadikannya pusat logistik penting untuk perdagangan regional dan internasional.",
-        products: ["🚗", "🍷", "🚜", "🏝️"],
+        products: [
+            {icon:"🚗", description:"Otomotif"},
+            {icon"🏝️", description:"Pariwisata"},
+            {icon:"💻", description:"Teknologi"}
+        ],
         isEU: true
     },
     ES: {
