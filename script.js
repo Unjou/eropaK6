@@ -389,24 +389,6 @@ const countries = {
         isEU: false,
     },
 
-    DE: {
-        name: "Jerman",
-        region : "central",
-        status: "developed",
-        capital: "Berlin",
-        population: "83 juta",
-        currency: "Euro (EUR)",
-        language: "Jerman",
-        flag: "https://flagcdn.com/de.svg",
-        description: "Ekonomi Jerman terkenal dengan manufaktur berteknologi tinggi, khususnya di sektor otomotif, mesin, dan kimia. Perusahaan-perusahaan besar seperti Volkswagen, Siemens, dan BASF adalah pemain global yang menunjukkan kekuatan industri Jerman. Sebagai anggota Uni Eropa, Jerman memainkan peran penting dalam ekonomi dan politik regional. Negara ini merupakan kontributor utama bagi stabilitas ekonomi kawasan dan sering memimpin dalam pengambilan keputusan di tingkat Eropa.",
-        products: [
-            {icon: "🚗", description: "Otomotif"},  
-            {icon:"💻", description:"Teknologi"}, 
-            {icon:"🚜", description:"Pertanian"}
-        ],
-        isEU: true
-    },
-
     AT: {
         name: "Austria",
         region : "central",
@@ -618,7 +600,7 @@ const countries = {
             {icon:"🚗", description:"Otomotif"},
             {icon:"💻", description:"Teknologi"},
             {icon:"📺", description:"Elektronik"},
-            {icon:"🏝️", description:"description"},
+            {icon:"🏝️", description:"Pariwisata"}
         ],
         isEU: true
     },
