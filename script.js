@@ -1059,8 +1059,13 @@ const countries = {
         currency: "Franc Swiss (CHF)",
         language: "Jerman, Prancis, Italia, Romansh",
         flag: "https://flagcdn.com/ch.svg",
-        description: "Negara ini juga dikenal karena sistem keuangan yang canggih, dengan sektor perbankan dan asuransi yang menjadi tulang punggung ekonominya. Swiss unggul dalam inovasi teknologi, farmasi, manufaktur mesin presisi, dan produk mewah seperti jam tangan, yang menjadi komoditas ekspor utamanya. Selain itu, fokus pada keberlanjutan dan kualitas hidup menjadikan Swiss salah satu negara dengan standar hidup tertinggi di dunia.",
-        products: ["🏦", "🏝️", "⌚", "🪙"],
+        description: "Negara ini juga dikenal karena sistem keuangan yang canggih, dengan sektor perbankan dan asuransi yang menjadi tulang punggung ekonominya. Swiss unggul dalam inovasi teknologi, farmasi, manufaktur mesin, dan produk mewah seperti jam tangan, yang menjadi komoditas ekspor utamanya. Selain itu, fokus pada keberlanjutan dan kualitas hidup menjadikan Swiss salah satu negara dengan standar hidup tertinggi di dunia.",
+        products: [
+            {icon:"🏦", description:"Jasa Keuangan"},
+            {icon:"🏝️", description:"Pariwisata"},
+            {icon:"⚙️", description:"Manufaktur"},
+            {icon:"💻", description:"Teknologi"}
+        ],
         isEU: false
     },
     UA: {
@@ -1073,7 +1078,9 @@ const countries = {
         language: "Ukraina",
         flag: "https://flagcdn.com/ua.svg",
         description: "Negara terbesar kedua di Eropa dengan lahan pertanian yang luas. Termasuk dalam kategori negara berkembang karena beberapa faktor utama selain konflik dengan Rusia. Sistem perbankan Ukraina juga menghadapi masalah stabilitas, yang membuat investasi asing masuk secara terbatas. Konflik dengan Rusia semakin memperburuk kondisi ekonomi dan sosial negara ini, tetapi akar masalahnya terletak pada tantangan struktural yang sudah lama ada.",
-        products: ["🌻", "🌾", "🚜", "🏭"],
+        products: [
+            {icon:"🚜", description:"Pertanian"}
+          ],
         isEU: false
     },
     GB: {
@@ -1087,7 +1094,12 @@ const countries = {
         language: "Inggris",
         flag: "https://flagcdn.com/gb.svg",
         description: "Inggris menghasilkan berbagai produk ekspor unggulan, seperti kendaraan bermotor, farmasi, mesin-mesin industri, teknologi canggih, dan produk keuangan. Selain itu, sektor jasa, termasuk pariwisata, perbankan, dan pendidikan internasional, berkontribusi signifikan terhadap perekonomian negara ini. Stabilitas politik, sistem hukum yang kuat, dan peran historisnya dalam perdagangan global menjadikan Inggris salah satu negara yang konsisten berada di jajaran negara maju.",
-        products: ["💊", "🚗", "💰"],
+        products: [
+            {icon:"💊", description:"Farmasi"},
+            {icon:"🚗", description:"Otomotif"},
+            {icon:"💻", description:"Teknologi"},
+            {icon:"⛱️", description:"Pariwisata"}
+        ],
         isEU: false
     },
     VA: {
@@ -1100,7 +1112,10 @@ const countries = {
         language: "Italia, Latin",
         flag: "https://flagcdn.com/va.svg",
         description: "Vatikan termasuk dalam kategori negara maju, meskipun memiliki ukuran yang sangat kecil Vatikan memiliki pendapatan yang stabil melalui sumber ekonomi, seperti kontribusi dari umat Katolik di seluruh dunia (Peter’s Pence). Meskipun Vatikan tidak memiliki produk ekspor, kontribusinya dalam sektor pariwisata religius dan budaya sangat besar. Sebagai pusat spiritual Gereja Katolik, Vatikan menarik jutaan wisatawan dan peziarah setiap tahun ke Basilika Santo Petrus, Kapel Sistina, dan museum-museum bersejarahnya.",
-        products: ["🕯️", "📿", "🎨", "📚"],
+        products: [
+            {icon:"🕯️", description:"Sumbangan"},
+            {icon:"📿", description:"Pariwisata"}
+         ],
         isEU: false
     },
     GE: {
@@ -1113,7 +1128,10 @@ const countries = {
         language: "Georgia",
         flag: "https://flagcdn.com/ge.svg",
         description: "Georgia masih masuk kategori negara berkembang meskipun memiliki lokasi strategis di persimpangan Eropa dan Asia karena beberapa faktor utama, seperti tantangan ekonomi yang signifikan, infrastruktur yang belum sepenuhnya berkembang, dan ketergantungan pada sektor ekonomi tertentu, seperti pertanian dan ekspor komoditas. Selain itu, meskipun ada upaya reformasi untuk meningkatkan perekonomian dan tata kelola pemerintahan, dampak konflik regional dan kurangnya investasi asing yang stabil masih menghambat kemajuan Georgia.",
-        products: ["🍷", "🏔️", "🍇", "🛢️"],
+        products: [
+            {icon:"🚜", description:"Pertanian"},
+            {icon:"⚙️", description:"Manufaktur"}
+        ],
         isEU: false
     },
     AZ: {
@@ -1126,7 +1144,10 @@ const countries = {
         language: "Azerbaijan",
         flag: "https://flagcdn.com/az.svg",
         description: "Merupakan salah satu negara di Kaukasus dengan kekayaan SDA melimpah terutama minyak dan gas alam. Meskipun punya banyak minyak dan gas, ekonomi mereka masih terlalu bergnatung pada sumber daya alam ini. Artinya, kalau harga minyak dunia lagi turun, perekonomian Azerbaijan bisa ikut terpengaruh. Juga karena pembangnan infrasturktur di beberapa daerah masih belum merata sehingga menyebabkan kesenjangan ekonomi antar daerah perkotaan dan pedesaan.",
-        products: ["🛢️", "🌾", "🥜"],
+        products: [
+            {icon:"🛢️", description:"Minyak"},
+            {icon:"🚜", description:"Pertanian"}
+        ],
         isEU: false
     },
     
