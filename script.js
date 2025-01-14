@@ -910,7 +910,7 @@ const countries = {
         description: "Portugal termasuk dalam kategori negara maju, tetapi posisinya dalam jajaran negara maju sering dianggap berada di tingkat yang lebih rendah dibandingkan negara-negara Uni Eropa lainnya. Salah satu alasan utama adalah stabilitas ekonomi yang telah dicapai melalui reformasi struktural dan dukungan dari Uni Eropa, meskipun negara ini masih menghadapi tantangan signifikan. Ekonomi Portugal sangat bergantung pada sektor pariwisata, yang memberikan kontribusi besar terhadap PDB tetapi membuat negara ini rentan terhadap guncangan global seperti pandemi. ",
         products: [
             {icon:"🚜", description:"Pertanian"},
-            {icon:"⚙️", description:"Manufaktur"}
+            {icon:"⚙️", description:"Manufaktur"},
             {icon:"🏝️", description:"Pariwisata"}
         ],
         isEU: true
@@ -1026,7 +1026,12 @@ const countries = {
         language: "Spanyol",
         flag: "https://flagcdn.com/es.svg",
         description: "Ekonomi Spanyol didukung oleh sektor pariwisata yang sangat maju, dengan negara ini menjadi salah satu tujuan wisata utama di dunia. Selain itu, sektor pertanian modern (seperti produksi anggur, buah-buahan, dan minyak zaitun), industri otomotif, serta jasa keuangan dan teknologi juga berkontribusi besar terhadap PDB-nya..",
-        products: ["🚗", "🫒", "🍊", "🏖️"],
+        products: [
+            {icon:"🚗", description:"Otomotif"},
+            {icon:"🚜", description:"Pertanian"},
+            {icon:"💻", description:"Teknologi"},
+            {icon:"🏖️", description:"Pariwisata"}
+        ],
         isEU: true
     },
     SE: {
@@ -1039,7 +1044,10 @@ const countries = {
         language: "Swedia",
         flag: "https://flagcdn.com/se.svg",
         description: "Negara ini dikenal sebagai rumah bagi perusahaan multinasional besar seperti IKEA, Ericsson, Volvo, dan Spotify, yang menunjukkan keunggulan dalam inovasi teknologi dan sektor manufaktur. Swedia juga merupakan salah satu pemimpin dunia dalam transisi energi hijau, dengan sebagian besar energinya berasal dari sumber terbarukan, seperti tenaga air dan angin.",
-        products: ["🚗", "💻", "🎵"],
+        products: [
+            {icon:"⚙️", description:"Manufaktur"},  
+            {icon:"💻", description:"Teknologi"}
+        ],
         isEU: true
     },
     CH: {
