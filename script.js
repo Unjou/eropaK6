@@ -602,10 +602,10 @@ const countries = {
         currency: "Euro (EUR)",
         language: "Prancis",
         flag: "https://flagcdn.com/fr.svg",
-        description: "Perusahaan-perusahaan besar seperti Airbus, Renault, dan L'Oréal, yang beroperasi di pasar global, adalah contoh keberhasilan sektor manufaktur dan konsumer di Prancis. Selain sektor industri, sektor jasa, terutama keuangan dan pariwisata, memainkan peran penting dalam perekonomian Prancis. Paris, sebagai salah satu pusat keuangan utama dunia, menarik investasi internasional dan merupakan tempat berkumpulnya banyak perusahaan multinasional. Sektor pariwisata juga sangat vital bagi ekonomi Prancis, dengan negara ini menjadi destinasi wisata paling banyak dikunjungi di dunia",
+        description: "Perusahaan-perusahaan besar seperti Airbus, Renault, dan L'Oréal, yang beroperasi di pasar global, adalah contoh keberhasilan sektor industri di Prancis. Selain sektor industri, sektor jasa, terutama keuangan dan pariwisata, memainkan peran penting dalam perekonomian Prancis. Paris, sebagai salah satu pusat keuangan utama dunia, menarik investasi internasional dan merupakan tempat berkumpulnya banyak perusahaan multinasional. Sektor pariwisata juga sangat vital bagi ekonomi Prancis, dengan negara ini menjadi destinasi wisata paling banyak dikunjungi di dunia",
         products: [
             {icon:"🍷", description:"Anggur"}, 
-            {icon:"🧀", description:"Olahan Susu"}, 
+            {icon:"🐄", description:"Hewani"}, 
             {icon:"🗼", description:"Pariwisata"}
         ],
         isEU: true
