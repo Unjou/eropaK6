@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const country = countries[countryCode];
         if (country) {
             document.getElementById('country-info').style.display = 'block';
-            
+        
             const headerHtml = `
                 <div class="country-header">
                     <img src="${country.flag}" alt="Bendera ${country.name}" class="country-flag">
@@ -330,11 +330,30 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(modal);
     }
 
-    function getCountryColor(countryCode) { 
-        const country = countries[countryCode]; 
-        if (!country) return '#ccc'; if (country.isEU) 
-            return '#4CAF50'; return country.status === 'developed' ? '#8BC34A' : '#FFC107'; } 
+    function getCountryColor(countryCode) {
+        const country = countries[countryCode];
+        if (!country) return '#ccc';
+        return country.status === 'developed' ? '#4CAF50' : '#FFC107';
+    }
+
+    function updateMapColors() {
+        map.eachLayer(function(layer) {
+            if (layer.feature && layer.feature.properties.ISO2) {
+                const countryCode = layer.feature.properties.ISO2;
+                layer.setStyle({
+                    fillColor: getCountryColor(countryCode),
+                    weight: 1,
+                    opacity: 1,
+                    color: 'white',
+                    fillOpacity: 0.7
+                });
+            }
         });
+    }
+
+    map.on('load', updateMapColors);
+
+});
 
 const countries = {
     AL: {
@@ -431,7 +450,7 @@ const countries = {
         currency: "Euro (EUR)",
         language: "Belanda, Prancis, Jerman",
         flag: "https://flagcdn.com/be.svg",
-        description: "Negara ini juga menjadi tuan rumah bagi banyak lembaga internasional, termasuk markas besar Uni Eropa di Brussels, yang menjadikan Belgia sebagai pusat diplomasi global. elabuhan Antwerp adalah salah satu pelabuhan terbesar di dunia dan pusat penting untuk perdagangan global, khususnya untuk impor dan ekspor barang. Industri utama Belgia meliputi kimia, farmasi, otomotif, dan teknologi.",
+        description: "Negara ini juga menjadi tuan rumah bagi banyak lembaga internasional, termasuk markas besar Uni Eropa di Brussels, yang menjadikan Belgia sebagai pusat diplomasi global. Pelabuhan Antwerp adalah salah satu pelabuhan terbesar di dunia dan pusat penting untuk perdagangan global, khususnya untuk impor dan ekspor barang. Industri utama Belgia meliputi kimia, farmasi, otomotif, dan teknologi.",
         products: [
             {icon:"🚗", description:"Otomotif"},
             {icon:"💊", description:"Farmasi"}, 
@@ -704,7 +723,7 @@ const countries = {
         currency: "Euro (EUR)",
         language: "Latvia",
         flag: "https://flagcdn.com/lv.svg",
-        description: "Meskipun sektor teknologi dan sektor jasa, seperti perbankan dan IT, berkembang pesat, Latvia masih bergantung pada sektor tradisional seperti manufaktur dan transportasi yang rentan terhadap fluktuasi pasar global. Sebagian besar industri Latvia juga lebih fokus pada ekspor barang mentah atau produk yang memiliki nilai tambah lebih rendah dibandingkan dengan negara-negara maju yang lebih berorientasi pada inovasi dan produk bernilai tinggi.",
+        description: "Meskipun sektor teknologi dan sektor jasa, seperti perbankan dan IT, berkembang pesat, Latvia masih bergantung pada sektor tradisional seperti manufaktur dan transportasi yang rentan terhadap fluktuasi pasar globalmanufaktur dan transportasi yang rentan terhadap fluktuasi pasar global. Sebagian besar industri Latvia juga lebih fokus pada ekspor barang mentah atau produk yang memiliki nilai tambah lebih rendah dibandingkan dengan negara-negara maju yang lebih berorientasi pada inovasi dan produk bernilai tinggi.",
         products: [
             {icon:"🏝️", description:"Pariwisata"},
             {icon:"⚙️", description:"Manufaktur"},
@@ -882,8 +901,8 @@ const countries = {
     },
     PL: {
         name: "Polandia",
-        region : "central",
-        status: "developing",
+        region: "central",
+        status: "developed", 
         capital: "Warsawa",
         population: "38 juta",
         currency: "Złoty Polandia (PLN)",
@@ -1152,3 +1171,4 @@ const countries = {
     },
     
 };
+
