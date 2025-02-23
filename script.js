@@ -477,7 +477,7 @@ const countries = {
     BG: {
         name: "Bulgaria",
         region: "southeastern",
-        status: "developing",
+        status: "developed",
         capital: "Sofia",
         population: "7 juta",
         currency: "Lev Bulgaria (BGN)",
